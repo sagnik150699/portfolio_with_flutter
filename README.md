@@ -1,2 +1,16 @@
-# Portfolio-with-Flutter
-A simple Application can look soo different with just a few features. Flutter has released a new feature where we can move around widgets and zoom in and out them. In this simple portfolio Application the background colour of the app changes randomly when we press any of the buttons. It also plays a note when we press the button.Each time we press the button the note progresses. I have also added the new feature of flutter, interactive viewer by which we can move around the widgets and zoon in and out.  Mentor- Angela Yu. #opentowork #flutterdeveloper #AppBrew #appbrew #Latest #flutter1_20 #InteractiveViewer #backgroundcolorchange
+# mi_card2
+
+A new Flutter application.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
