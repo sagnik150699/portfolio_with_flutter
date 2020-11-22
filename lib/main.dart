@@ -3,34 +3,47 @@ import 'package:flutter/material.dart';
 import 'package:random_color/random_color.dart';
 import 'package:audioplayers/audio_cache.dart';
 import 'dart:math';
+
 void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
 }
 
-
 class _MyAppState extends State<MyApp> {
 //  final customColor = Colors.teal;
 //  List<final> customColor = List<String>(3);
- int number=0;
- int note=1;
-  final List<Color> customColor=[Colors.teal,Colors.red,Colors.yellow,Colors.blue,Colors.orange,Colors.green,Colors.purple,Colors.pink,Colors.brown,Colors.black,Colors.indigo];
+  int number = 0;
+  int note = 1;
+  final List<Color> customColor = [
+    Colors.teal,
+    Colors.red,
+    Colors.yellow,
+    Colors.blue,
+    Colors.orange,
+    Colors.green,
+    Colors.purple,
+    Colors.pink,
+    Colors.brown,
+    Colors.black,
+    Colors.indigo
+  ];
   @override
-    Widget build(BuildContext context) {
+  Widget build(BuildContext context) {
     void Play(int a) {
       final player = AudioCache();
       player.play('note$a.wav');
     }
-    int checksound(int a){
-      if(a==8){
-        a=1;
+
+    int checksound(int a) {
+      if (a == 8) {
+        a = 1;
       }
       return a;
     }
-
 
     return MaterialApp(
       home: Scaffold(
@@ -43,14 +56,13 @@ class _MyAppState extends State<MyApp> {
               InteractiveViewer(
                 boundaryMargin: EdgeInsets.all(200.0),
                 child: FlatButton(
-                  onPressed: (){
+                  onPressed: () {
                     print(number);
                     setState(() {
-                      number=Random().nextInt(11);
-                      note=checksound(note);
+                      number = Random().nextInt(11);
+                      note = checksound(note);
                       Play(note);
                       note++;
-
                     });
                   },
                   child: CircleAvatar(
@@ -61,21 +73,19 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
               InteractiveViewer(
-               boundaryMargin: EdgeInsets.all(200.0),
+                boundaryMargin: EdgeInsets.all(200.0),
 //                minScale: 0.1,
 //                maxScale: 1.6,
                 child: FlatButton(
                   padding: EdgeInsets.all(0.0),
-
-                  onPressed: (){
-                   print(number);
-                   setState(() {
-                     number=Random().nextInt(11);
-                     note=checksound(note);
-                     Play(note);
-                     note++;
-
-                   });
+                  onPressed: () {
+                    print(number);
+                    setState(() {
+                      number = Random().nextInt(11);
+                      note = checksound(note);
+                      Play(note);
+                      note++;
+                    });
                   },
                   child: Text('Sagnik_Bhattacharya',
                       style: TextStyle(
@@ -110,13 +120,13 @@ class _MyAppState extends State<MyApp> {
                 child: FlatButton(
                   onPressed: () {
                     print(number);
-                     setState(() {number=Random().nextInt(11);
-                     note=checksound(note);
-                     Play(note);
-                     note++;
-                     });
-                    },
-
+                    setState(() {
+                      number = Random().nextInt(11);
+                      note = checksound(note);
+                      Play(note);
+                      note++;
+                    });
+                  },
                   child: Card(
                       margin:
                           EdgeInsets.symmetric(vertical: 10.0, horizontal: 0.0),
@@ -143,10 +153,11 @@ class _MyAppState extends State<MyApp> {
                 child: FlatButton(
                   onPressed: () {
                     print(number);
-                    setState(() {number=Random().nextInt(11);
-                    note=checksound(note);
-                    Play(note);
-                    note++;
+                    setState(() {
+                      number = Random().nextInt(11);
+                      note = checksound(note);
+                      Play(note);
+                      note++;
                     });
                   },
                   child: Card(
@@ -175,6 +186,5 @@ class _MyAppState extends State<MyApp> {
         ),
       ),
     );
-
   }
 }
