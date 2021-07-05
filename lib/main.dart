@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:random_color/random_color.dart';
 import 'package:audioplayers/audio_cache.dart';
 import 'dart:math';
 
@@ -33,12 +32,12 @@ class _MyAppState extends State<MyApp> {
   ];
   @override
   Widget build(BuildContext context) {
-    void Play(int a) {
+    void play(int a) {
       final player = AudioCache();
       player.play('note$a.wav');
     }
 
-    int checksound(int a) {
+    int checkSound(int a) {
       if (a == 8) {
         a = 1;
       }
@@ -54,14 +53,15 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               InteractiveViewer(
-                boundaryMargin: EdgeInsets.all(200.0),
-                child: FlatButton(
+                boundaryMargin: EdgeInsets.all(42.0),
+                scaleEnabled: true,
+                child: MaterialButton(
                   onPressed: () {
                     print(number);
                     setState(() {
                       number = Random().nextInt(11);
-                      note = checksound(note);
-                      Play(note);
+                      note = checkSound(note);
+                      play(note);
                       note++;
                     });
                   },
@@ -76,14 +76,14 @@ class _MyAppState extends State<MyApp> {
                 boundaryMargin: EdgeInsets.all(200.0),
 //                minScale: 0.1,
 //                maxScale: 1.6,
-                child: FlatButton(
+                child: MaterialButton(
                   padding: EdgeInsets.all(0.0),
                   onPressed: () {
                     print(number);
                     setState(() {
                       number = Random().nextInt(11);
-                      note = checksound(note);
-                      Play(note);
+                      note = checkSound(note);
+                      play(note);
                       note++;
                     });
                   },
@@ -117,13 +117,13 @@ class _MyAppState extends State<MyApp> {
               ),
               InteractiveViewer(
                 boundaryMargin: EdgeInsets.all(200.0),
-                child: FlatButton(
+                child: MaterialButton(
                   onPressed: () {
                     print(number);
                     setState(() {
                       number = Random().nextInt(11);
-                      note = checksound(note);
-                      Play(note);
+                      note = checkSound(note);
+                      play(note);
                       note++;
                     });
                   },
@@ -150,13 +150,13 @@ class _MyAppState extends State<MyApp> {
               ),
               InteractiveViewer(
                 boundaryMargin: EdgeInsets.all(200.0),
-                child: FlatButton(
+                child: MaterialButton(
                   onPressed: () {
                     print(number);
                     setState(() {
                       number = Random().nextInt(11);
-                      note = checksound(note);
-                      Play(note);
+                      note = checkSound(note);
+                      play(note);
                       note++;
                     });
                   },
