@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audio_cache.dart';
@@ -33,8 +34,8 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     void play(int a) {
-      final player = AudioCache();
-      player.play('note$a.wav');
+      final player = AudioPlayer();
+      player.play(AssetSource('note$a.wav'));
     }
 
     int checkSound(int a) {
