@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sagnik150699/Sagnik-Bhattacharya/master/public/sagnik-bhattacharya.png" alt="Sagnik Bhattacharya" width="180">
+</p>
+**Sagnik Bhattacharya**
+Website: [sagnikbhattacharya.com](https://sagnikbhattacharya.com)
 
 ![Screenshot_2020-08-09-17-23-45-242_com.example.mi_card2.jpg](images/Screenshot_2020-08-09-17-23-45-242_com.example.mi_card2.jpg)
 ![Screenshot_2020-08-09-17-23-48-715_com.example.mi_card2.jpg](images/Screenshot_2020-08-09-17-23-48-715_com.example.mi_card2.jpg)
