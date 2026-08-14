@@ -1,5 +1,11 @@
 # Portfolio With Flutter
 
+## Course
+
+This project is part of **The Complete Flutter Course: Build Android, iOS, and Web apps**.
+
+[View the course on Coding Liquids](https://www.codingliquids.com/courses/Flutter-Course-Learn-to-Build-Android-iOS-and-Web-apps-637b978ee4b08f9aaa22d2cb)
+
 Ever seen an app transform with a button press? With Flutter's new 'Interactive Viewer', my portfolio app does just that! Tap a button, and the background color changes, a musical note plays, and you can even drag and zoom widgets. Cool, huh?
 
 ## Learning Context
